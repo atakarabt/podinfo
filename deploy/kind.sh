@@ -16,7 +16,7 @@ nodes:
 EOF
 
 # create the kind cluster
-kind create cluster --config=kind.yaml
+kind create cluster --config=./bin/kind.yaml
 
 # add certificate manager
 kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.0.4/cert-manager.yaml
